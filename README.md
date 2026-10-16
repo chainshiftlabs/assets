@@ -1,6 +1,8 @@
 # assets
 
-[planning](https://github.com/chainshiftlabs/planning) 레포의 무거운 파일을 두는 곳이다. 영상·녹음·3D·디자인 원본·압축 파일을 Git LFS 로 관리한다.
+[planning](https://github.com/chainshiftlabs/planning) 레포의 무거운 파일을 두는 곳이다. 영상·3D·디자인 원본·압축 파일을 Git LFS 로 관리한다.
+
+**공개 레포다.** 올린 파일은 누구나 받을 수 있고, 비공개로 돌려도 이미 받아 간 사본은 회수되지 않는다.
 
 - planning 에는 md·코드·작은 이미지만 남기고, 무거운 원본은 여기에 둔다
 - LFS 대상 확장자는 [.gitattributes](.gitattributes) 에 있다
@@ -17,14 +19,13 @@ git clone git@github.com:chainshiftlabs/assets.git
 
 ## 폴더 구조
 
-planning 과 같은 경로를 쓴다. planning 의 `project/f05-search-seoul-2026/연설녹음/` 에 있을 파일은 여기서도 `project/f05-search-seoul-2026/연설녹음/` 에 둔다.
+planning 과 같은 경로를 쓴다. planning 의 `mockups/apps/mockup-hub/public/f19-cheto-flow/` 에 있을 파일은 여기서도 `mockups/apps/mockup-hub/public/f19-cheto-flow/` 에 둔다.
 
 - 어느 문서가 이 파일을 쓰는지 경로만 보고 찾을 수 있게 하려는 것이다
 
 | 폴더 | 무엇을 두나 |
 | --- | --- |
 | `project/` · `mockups/` | 스펙·목업에 쓰는 영상·3D·원본 이미지 |
-| `meetings/` | 회의 녹음(m4a) |
 | `workspace/<이름>/` | 개인 작업 원본. 남의 폴더는 요청 없이 고치지 않는다 |
 | `knowledge/` · `research/` · `roadmap/` · `docs/` · `incidents/` · `board/` | planning 같은 폴더의 문서가 쓰는 첨부 |
 | `etc/_archive/` | 지난 버전 원본 |
@@ -45,8 +46,8 @@ git push
 ```
 
 - **올리기 전에 `git lfs status` 로 LFS 로 잡혔는지 확인한다.** `.gitattributes` 에 없는 확장자는 일반 git 객체로 올라가고, 한 번 들어가면 히스토리를 재작성해야 뺄 수 있다
-- 회의 녹음도 planning 과 같이 32kbps AAC 모노로 재인코딩해서 올린다
-- 인사·평가·미공개 계약 발언이 담긴 녹음은 올리지 않는다
+- **녹음은 올리지 않는다.** 회의 녹음은 planning 에 둔다
+- 고객 데이터·계약서·내부 문서처럼 밖에 나가면 안 되는 파일도 올리지 않는다
 
 ## 용량
 
