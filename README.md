@@ -33,7 +33,7 @@ planning 과 같은 경로를 쓴다. planning 의 `project/f05-search-seoul-202
 
 ## 지금 들어 있는 것
 
-- `mockups/apps/mockup-hub/public/f19-cheto-flow/*-source.mp4` — 체토 모션 원본 38개 (57MB). planning 목업은 아직 planning 쪽 사본을 쓴다
+- `mockups/apps/mockup-hub/public/f19-cheto-flow/*-source.mp4` — 체토 모션 원본 38개 (57MB). planning 에는 없고 여기가 유일한 사본이다. 쓰는 법은 planning 의 `mockups/apps/mockup-hub/scripts/cheto-flow/README.md`
 
 ## 올릴 때
 
